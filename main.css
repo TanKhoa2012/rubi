@@ -1,0 +1,255 @@
+.header-1{
+position: relative;
+display: flex;
+padding-left: 0px;
+margin: auto 16px;
+list-style: none;
+font-family:"Roboto", sans-serif;
+color: grey;
+font-size: 15px;
+}
+.header-head{
+background-color: white;
+display: flex;
+justify-content: space-between;
+min-width: 30px;
+
+
+}
+body{
+    position: relative;
+    top: -10px;
+}
+.head-2{
+list-style: none;
+margin: 0px 4px;
+text-align: center;
+padding-top: 15px;
+padding-bottom: 5px;
+
+
+}
+.header-1:nth-child(1)>.head-2{
+    border-right: 0.5px solid #e5e5e5;
+    padding-right: 25px;
+}
+.header-1:nth-child(1)>.head-2:nth-child(2){
+    padding-left: 20px;
+}
+.body-1>.body-2:nth-child(1){
+    height: 70%;
+   
+}
+.body-1>.body-2:nth-child(2){
+    list-style: none;
+    width: 40%;
+    min-width: 170px;
+    flex-wrap: wrap;
+    font-family:"Roboto", sans-serif;
+    font-weight: 600;
+
+}
+.body-1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.5px solid #e5e5e5;
+    
+}
+.body-2{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    
+}
+
+.body-2:nth-child(3){
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+    border-width: 0.1px;
+}
+.header-footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-family:"Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    align-items: center;
+    border-top: 0.5px solid #e5e5e5;
+    height: 90px;
+    background-color: #f7f7f7;
+    
+}
+.header-footer > .header-footer-1:nth-child(2)
+{
+    display: flex;
+    align-items: center;
+}
+
+#TL{
+    border-right: 50px transparent solid;
+}
+
+.item{
+    display:none;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 0.5s;
+    -webkit-animation-name: fad;
+    -webkit-animation-duration: 0.5s;
+}
+.item:nth-child(1){
+    display: flex;
+    align-items: center;
+    -webkit-animation-name: fad;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+
+.header-footer-1:nth-child(2)>i{
+    margin-right: 20px;
+}
+.body-head > img{
+    width: 100%;
+}
+
+
+.fade{
+    -webkit-animation-name: fad;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+@keyframes fad{
+    from{opacity: 1;
+        transform: translateX(auto);
+        display: flex;
+    }
+      
+    
+    to{opacity: 0;
+        transform: translateX(300px);
+        display: none;
+    }
+    
+}
+@keyframes fadR{
+    from{opacity: 1;
+        transform: translateX(auto);
+        display: flex;
+    }
+    to{opacity: 0;
+        transform: translateX(-300px);
+        display: none;
+    }
+    
+}
+@keyframes fadeR{
+    from{opacity: 0;
+        transform: translateX(300px);
+      }
+  to{opacity: 1;
+      transform: translateX(auto);
+    }
+}
+@keyframes fade{
+    from{opacity: 0;
+          transform: translateX(-300px);
+        }
+    to{opacity: 1;
+        transform: translateX(auto);
+ }
+}
+
+.header-footer:hover #TL
+{
+    
+    cursor: pointer;
+    position: relative;
+    animation: nutL 0.3s forwards;
+}
+.header-footer:hover #TR
+{
+    cursor: pointer;
+    position: relative;
+    animation: nutR 0.3s forwards;
+}
+#TR{
+    border-left: 50px transparent solid;
+}
+
+@keyframes nutL{
+    from{
+        left: 0px;
+    }to{
+        left: -10px;
+    }
+}
+
+@keyframes nutR{
+    from{
+        right: 0px;
+    }to{
+        right: -10px;
+    }
+}
+
+.body-img{
+    display: none;
+    width: 100%;
+}
+.body-img:nth-child(1)
+{
+    display: flex;
+}
+.dus
+{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input[type='radio']:nth-child(1)::after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #080807;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input[type='radio']:checked::after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #080807;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
